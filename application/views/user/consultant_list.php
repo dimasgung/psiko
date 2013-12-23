@@ -31,7 +31,7 @@
 									<img src="<?php echo base_url(); ?>/resources/images/<?php echo $row['foto']?>" alt="Img" height="94" width="90">
 								</div>
 							</div>
-							<p>
+							<p align="justify">
 								<b><?php echo $row['nama']?></b> <?php echo $row['deskripsi']?>
 							</p>
 						</li>

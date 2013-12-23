@@ -99,7 +99,17 @@ function singlepost()
  function about()
  {   
 	 $data['body'] = 'user/about';
-	 $data['about'] = $this->M_Psiko->get_konten('tentang');
+	 $data['tentang'] = $this->M_Psiko->get_konten('tentang');
+	 $this->db->close();
+	 $data['visi'] = $this->M_Psiko->get_konten('visi');
+	 $this->db->close();
+	 $data['misi_desc'] = $this->M_Psiko->get_misi_description();
+	 $this->db->close();
+	 $data['misi_list'] = $this->M_Psiko->get_misi_list();
+	 $this->db->close();
+	 $data['misc_desc'] = $this->M_Psiko->get_misc_description();
+	 $this->db->close();
+	 $data['misc_list'] = $this->M_Psiko->get_misc_list();
 	 $this->load->view("user/temp", $data);
  }
  

@@ -19,7 +19,7 @@
 				    <?php }?>
 				</div>
 				<h1><?php echo $home->judul?></h1>
-				<p>
+				<p align="justify">
 					<?php echo $home->isi?>
 				</p>
 			</div>

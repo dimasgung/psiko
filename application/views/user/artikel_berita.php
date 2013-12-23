@@ -32,7 +32,7 @@
 							<?php echo $row['tanggal']?> oleh <span class="author"><?php echo $row['pengarang']?></span>
 						</p>
 						<h2><?php echo $row['nama']?></h2>
-						<p>
+						<p align="justify">
 							<?php echo $row['isi']?>
 						</p>
 						<a href="singlepost.html" class="more">Read More</a>
