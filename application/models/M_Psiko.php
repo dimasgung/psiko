@@ -89,6 +89,18 @@
 			return $data->result_array();
         }
         
+        function get_misi_description()
+        {
+            $data = $this->db->query("call sp_get_misi_description()");
+			return $data->first_row();
+        }
+        
+        function get_misi_list()
+        {
+            $data = $this->db->query("call sp_get_misi_list()");
+			return $data->result_array();
+        }
+        
         function get_misc_description()
         {
             $data = $this->db->query("call sp_get_misc_description()");
