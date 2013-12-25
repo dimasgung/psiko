@@ -88,6 +88,72 @@ class  C_home extends CI_Controller{
  function practices()
  {   
 	 $data['body'] = 'user/practices';
+	 $this->db->close();
+
+	 $data['klinis_head_desc'] = $this->M_Psiko->get_klinis_description_head();
+	 $this->db->close();
+	 $data['klinis_foot_desc'] = $this->M_Psiko->get_klinis_description_foot();
+	 $this->db->close();	 
+	 $data['klinis_list'] = $this->M_Psiko->get_klinis_list();
+	 $this->db->close();
+
+	 $data['pendidikan_list'] = $this->M_Psiko->get_pendidikan_list();
+	 $this->db->close();
+	 $data['pendidikan_desc'] = $this->M_Psiko->get_pendidikan_description();
+	 $this->db->close();	 
+	 $data['pendidikan_service'] = $this->M_Psiko->get_pendidikan_service();
+	 $this->db->close();
+
+	 $data['rekrutmen_seleksi_head_desc'] = $this->M_Psiko->get_recruitment_selection_desc_head();
+	 $this->db->close();
+	 $data['rekrutmen_seleksi_foot_desc'] = $this->M_Psiko->get_recruitment_selection_desc_foot();
+	 $this->db->close();	 
+	 $data['rekrutmen_seleksi_list'] = $this->M_Psiko->get_recruitment_selection_list();
+	 $this->db->close();
+
+	 $data['rekrutmen_konsultan_desc'] = $this->M_Psiko->get_recruitment_consultant('Deskripsi');
+	 $this->db->close();
+	 $data['rekrutmen_konsultan_full_service'] = $this->M_Psiko->get_recruitment_consultant('Full Recruitment Services');
+	 $this->db->close();
+	 $data['rekrutmen_konsultan_event_management'] = $this->M_Psiko->get_recruitment_consultant('Recruitment Event Management');
+	 $this->db->close();
+	 $data['rekrutmen_konsultan_executive_search'] = $this->M_Psiko->get_recruitment_consultant('Executive Search');
+	 $this->db->close();
+
+	 $data['assesment_psikologi'] = $this->M_Psiko->get_psychological_assesment();
+	 $this->db->close();
+
+	 $data['assesment_centre_desc_head'] = $this->M_Psiko -> get_assesment_centre_desc_head();
+	 $this->db->close();
+	 $data['assesment_centre_desc_foot'] = $this->M_Psiko -> get_assesment_centre_desc_foot();
+	 $this->db->close();
+	 $data['assesment_centre_list'] = $this->M_Psiko -> get_assesment_centre_list();
+	 $this->db->close();
+
+	 $data['conseling_employee_desc_head'] = $this->M_Psiko -> get_conseling_employee_desc_head();
+	 $this->db->close();
+	 $data['conseling_employee_desc_foot'] = $this->M_Psiko -> get_conseling_employee_desc_foot();
+	 $this->db->close();
+	 $data['conseling_employee_list'] = $this->M_Psiko -> get_conseling_employee_list();
+	 $this->db->close();
+
+	 $data['training_desc_head'] = $this->M_Psiko -> get_training_desc_head();
+	 $this->db->close();
+	 $data['training_desc_foot'] = $this->M_Psiko -> get_training_desc_foot();
+	 $this->db->close();
+	 $data['training_list'] = $this->M_Psiko -> get_training_list();
+	 $this->db->close();
+
+	 $data['performance_management_desc'] = $this->M_Psiko -> get_performance_management_description();
+	 $this->db->close();
+	 $data['performance_management_list'] = $this->M_Psiko -> get_performance_management_list();
+	 $this->db->close();
+
+	 $data['hris_desc'] = $this->M_Psiko -> get_hris_description();
+	 $this->db->close();
+	 $data['hris_list'] = $this->M_Psiko -> get_hris_list();
+	 $this->db->close();
+
 	 $this->load->view("user/temp", $data);
  }
 

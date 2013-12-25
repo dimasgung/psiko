@@ -20,7 +20,7 @@
 					<a href="<?php echo site_url();?>/C_home/about">Tentang</a>
 				</li>
 				<li>
-					<a href="<?php echo site_url();?>/C_home/practices">Practices</a>
+					<a href="<?php echo site_url();?>/C_home/practices">Layanan</a>
 				</li>
 				<li>
 					<a href="<?php echo site_url();?>/C_home/consultant_list">Daftar Konsultan</a>
