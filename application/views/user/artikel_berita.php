@@ -31,11 +31,13 @@
 						<p class="info">
 							<?php echo $row['tanggal']?> oleh <span class="author"><?php echo $row['pengarang']?></span>
 						</p>
-						<h2><?php echo $row['nama']?></h2>
+						<h2><?php echo $row['judul']?></h2>
 						<p align="justify">
-							<?php echo $row['isi']?>
+							<?php echo substr($row['isi'], 0, 100) . "..."?>
 						</p>
 						<a href="singlepost.html" class="more">Read More</a>
+						</br>
+						</br>
 					</li>
 					<?php } ?>
 				</ul>

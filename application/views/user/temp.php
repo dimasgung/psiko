@@ -5,6 +5,10 @@
 	<meta charset="UTF-8">
 	<title>Our Lawyers - Law Firm</title>
 	<link href='<?php echo base_url(); ?>/resources/css/style.css' type='text/css' rel='stylesheet' />
+	<script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
+	<script>
+        tinymce.init({selector:'textarea'});
+	</script>
 </head>
 <body>
 	<div id="header">

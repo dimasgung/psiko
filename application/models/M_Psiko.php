@@ -5,7 +5,14 @@
 			parent:: __construct();
 		}
         
-
+		//UPLOAD
+		function upload($name)
+        {
+		echo $name;
+            $q = $this->db->query("call sp_upload_foto(?)",array($name));
+           // return $data->first_row();
+		   
+        }
         // This is login model function
         function login($username, $password)
         {

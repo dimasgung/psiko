@@ -15,7 +15,7 @@ class  C_home extends CI_Controller{
  {  	
     //if($this->session->userdata("id_user"))     
     //{
-	    $data['error']	="";
+	    $data['error']="";
 	    $data['body'] = 'user/home';
 	    $data['home'] = $this->M_Psiko->get_konten('sekilas');
 	    $this->load->view("user/temp", $data); 
