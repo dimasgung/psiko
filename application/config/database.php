@@ -52,8 +52,14 @@ $active_record = TRUE;
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = '';
-
 $db['default']['database'] = 'psikologi';
+/*
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'k0427744_bipi';
+$db['default']['password'] = 'abc123abc123';
+
+$db['default']['database'] = 'k0427744_psikologi
+*/
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
